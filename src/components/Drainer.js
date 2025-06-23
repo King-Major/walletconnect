@@ -1,14 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Wallet, Import, ExternalLink, Menu, X, Moon, Sun, AlertTriangle } from 'lucide-react';
 import ServicesSection from './Resolve';
+import { Link } from 'react-router-dom';
 
-
-// Mock Link component for demo - replace with actual React Router Link
-const Link = ({ to, children, className, ...props }) => (
-  <a href={to} className={className} {...props}>
-    {children}
-  </a>
-);
 
 // Animation timing constants
 const PRELOADER_DURATION = 2500;
